@@ -481,7 +481,7 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
   font-style: italic;
   font-family: var(--font-display);
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--gold-dark);
 }
 
@@ -500,7 +500,7 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
   font-style: italic;
   font-size: 2.1rem;
   font-weight: 600;
-  color: var(--jade-deep);
+  color: var(--jade);
   margin-top: 16px;
   padding-top: 18px;
   border-top: 1px solid rgba(202, 166, 106, 0.5);
