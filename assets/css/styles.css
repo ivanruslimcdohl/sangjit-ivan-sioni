@@ -47,7 +47,7 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-body);
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.65;
   color: var(--ink);
   background: var(--bg-ivory);
@@ -57,7 +57,7 @@ body {
 }
 
 @media (min-width: 480px) {
-  body { font-size: 18px; }
+  body { font-size: 20px; }
 }
 
 /* When cover is open, lock scroll behind it */
@@ -79,8 +79,8 @@ h1, h2, h3 {
 
 .eyebrow {
   font-family: var(--font-body);
-  font-size: 0.72rem;
-  letter-spacing: 0.35em;
+  font-size: 0.82rem;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--gold-dark);
   margin-bottom: 0.6rem;
@@ -177,8 +177,8 @@ h1, h2, h3 {
 
 .cover-eyebrow {
   font-family: var(--font-body);
-  font-size: 0.72rem;
-  letter-spacing: 0.45em;
+  font-size: 0.82rem;
+  letter-spacing: 0.4em;
   text-transform: uppercase;
   color: var(--gold-light);
   margin-bottom: 0.7rem;
@@ -203,7 +203,7 @@ h1, h2, h3 {
 
 .cover-date {
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   color: var(--gold-light);
   margin-bottom: 1.6rem;
   letter-spacing: 0.08em;
@@ -217,7 +217,7 @@ h1, h2, h3 {
 }
 
 .cover-to-label {
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold-light);
@@ -227,17 +227,17 @@ h1, h2, h3 {
 .cover-to-name {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 1.4rem;
+  font-size: 1.55rem;
   color: var(--ivory-text);
   word-break: break-word;
 }
 
 .cover-hint {
-  font-size: 0.85rem;
+  font-size: 0.98rem;
   margin-top: 1.4rem;
-  color: rgba(245, 236, 215, 0.75);
+  color: rgba(245, 236, 215, 0.78);
   font-style: italic;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 /* Cover hidden state */
@@ -267,12 +267,12 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 14px 28px;
-  min-height: 48px;
+  padding: 16px 32px;
+  min-height: 52px;
   border: 0;
   border-radius: 999px;
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: 1.02rem;
   font-weight: 500;
   letter-spacing: 0.05em;
   cursor: pointer;
@@ -383,7 +383,7 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
 
 .hero-date {
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   letter-spacing: 0.14em;
   color: var(--ink-soft);
 }
@@ -393,7 +393,7 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
   align-items: center;
   gap: 8px;
   margin-top: 2.5rem;
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold-dark);
@@ -424,7 +424,7 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
 
 .verse-text {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: 1.22rem;
   font-style: italic;
   line-height: 1.75;
   color: var(--ink-soft);
@@ -433,8 +433,8 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
 
 .verse-ref {
   font-family: var(--font-body);
-  font-size: 0.72rem;
-  letter-spacing: 0.3em;
+  font-size: 0.85rem;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--gold-dark);
   padding-bottom: 22px;
@@ -459,22 +459,22 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
 }
 
 .family-role {
-  font-size: 0.7rem;
-  letter-spacing: 0.3em;
+  font-size: 0.82rem;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--gold-dark);
   margin-bottom: 10px;
 }
 
 .family-lead {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--ink-soft);
   margin-bottom: 8px;
   letter-spacing: 0.04em;
 }
 
 .family-parents {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.7;
   color: var(--ink);
   margin-bottom: 14px;
@@ -484,7 +484,7 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
   display: block;
   font-style: italic;
   font-family: var(--font-display);
-  font-size: 1.3rem;
+  font-size: 1.45rem;
   color: var(--jade);
 }
 
@@ -494,13 +494,13 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
   color: var(--gold-dark);
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .family-child {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 1.3rem;
+  font-size: 1.45rem;
   color: var(--jade);
   padding-top: 12px;
   border-top: 1px dashed rgba(202, 166, 106, 0.4);
@@ -552,8 +552,8 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
 
 .count-label {
   display: block;
-  font-size: 0.68rem;
-  letter-spacing: 0.15em;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--gold-dark);
 }
@@ -585,17 +585,17 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
 }
 
 .event-label {
-  font-size: 0.7rem;
-  letter-spacing: 0.25em;
+  font-size: 0.82rem;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--gold-dark);
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .event-value {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   color: var(--jade);
   line-height: 1.35;
 }
@@ -603,7 +603,7 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
 .event-address {
   font-family: var(--font-body);
   font-style: normal;
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   color: var(--ink-soft);
   margin-top: 4px;
   line-height: 1.5;
@@ -642,7 +642,7 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
 .closing-signature { margin-top: 16px; line-height: 1.6; }
 
 .closing-signature p:first-child {
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   color: var(--ink-soft);
   margin-bottom: 6px;
 }
@@ -650,12 +650,12 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
 .closing-names {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 2rem;
+  font-size: 2.15rem;
   color: var(--jade);
 }
 
 .closing-families {
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   color: var(--ink-soft);
   margin-top: 2px;
 }
@@ -679,7 +679,7 @@ body.cover-locked .floating-controls {
 }
 
 .fc-btn {
-  width: 48px; height: 48px;
+  width: 52px; height: 52px;
   border-radius: 50%;
   border: 1px solid rgba(202, 166, 106, 0.4);
   background: rgba(255, 255, 255, 0.92);
@@ -691,7 +691,7 @@ body.cover-locked .floating-controls {
   box-shadow: var(--shadow-soft);
   font-family: var(--font-body);
   font-weight: 600;
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   letter-spacing: 0.1em;
   transition: transform 0.2s ease, background 0.2s ease;
 }
@@ -723,7 +723,7 @@ body.cover-locked .floating-controls {
 
 @media (min-width: 1024px) {
   :root { --content-w: 720px; }
-  body { font-size: 19px; }
+  body { font-size: 21px; }
 }
 
 /* ============================ REDUCED MOTION ============================ */
