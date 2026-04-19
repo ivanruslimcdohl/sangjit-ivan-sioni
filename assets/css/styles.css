@@ -397,6 +397,28 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
   color: var(--ink-soft);
 }
 
+.scroll-hint {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  animation: bob 2s ease-in-out infinite;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(6px); }
+}
+
 /* ============================ VERSE ============================ */
 .verse { text-align: center; }
 
@@ -729,7 +751,7 @@ body.cover-locked .floating-controls {
 
 /* ============================ PRINT ============================ */
 @media print {
-  .cover, .floating-controls, .hero-bg { display: none !important; }
+  .cover, .floating-controls, .hero-bg, .scroll-hint { display: none !important; }
   .main { opacity: 1 !important; }
   body { background: #fff; color: #000; }
 }
