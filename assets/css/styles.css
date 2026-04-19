@@ -397,23 +397,6 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
   color: var(--ink-soft);
 }
 
-.scroll-hint {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 2.5rem;
-  font-size: 0.88rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gold-dark);
-  animation: bob 2s ease-in-out infinite;
-}
-
-@keyframes bob {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(6px); }
-}
-
 /* ============================ VERSE ============================ */
 .verse { text-align: center; }
 
@@ -746,7 +729,7 @@ body.cover-locked .floating-controls {
 
 /* ============================ PRINT ============================ */
 @media print {
-  .cover, .floating-controls, .hero-bg, .scroll-hint { display: none !important; }
+  .cover, .floating-controls, .hero-bg { display: none !important; }
   .main { opacity: 1 !important; }
   body { background: #fff; color: #000; }
 }
