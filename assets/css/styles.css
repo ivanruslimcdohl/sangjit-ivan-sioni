@@ -480,9 +480,9 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
   display: block;
   font-style: italic;
   font-family: var(--font-display);
-  font-size: 1.7rem;
-  font-weight: 600;
-  color: var(--jade);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--ink-soft);
 }
 
 .family-and {
@@ -491,19 +491,20 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
   color: var(--gold-dark);
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .family-child {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   font-weight: 600;
   color: var(--jade-deep);
-  margin-top: 16px;
-  padding-top: 18px;
+  margin-top: 18px;
+  padding-top: 20px;
   border-top: 1px solid rgba(202, 166, 106, 0.5);
-  line-height: 1.25;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
 }
 
 .family-divider {
