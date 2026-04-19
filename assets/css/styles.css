@@ -391,9 +391,9 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
 
 .hero-date {
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
   color: var(--ink-soft);
 }
 
