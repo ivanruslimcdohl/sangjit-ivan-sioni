@@ -497,11 +497,13 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
 .family-child {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   font-weight: 600;
-  color: var(--jade);
-  padding-top: 12px;
-  border-top: 1px dashed rgba(202, 166, 106, 0.4);
+  color: var(--jade-deep);
+  margin-top: 16px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(202, 166, 106, 0.5);
+  line-height: 1.25;
 }
 
 .family-divider {
