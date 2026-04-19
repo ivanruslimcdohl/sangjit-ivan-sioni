@@ -337,8 +337,8 @@ body:not(.cover-locked) .main[aria-hidden="true"] {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: min(85vw, 440px);
-  height: min(85vw, 440px);
+  width: min(92vw, 500px);
+  height: min(92vw, 500px);
   transform: translate(-50%, -50%);
   opacity: 0.95;
   animation: drift 14s ease-in-out infinite alternate;
