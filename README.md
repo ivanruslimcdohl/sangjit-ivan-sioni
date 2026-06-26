@@ -57,7 +57,18 @@ Append `?to=` with the guest's name (URL-encoded):
 https://your-site.example.com/?to=Bapak%20dan%20Ibu%20Hadi
 ```
 
-The opening cover will greet them by name. When they tap **Share via WhatsApp**, the `?to=` is stripped so the shared link is clean.
+The opening cover will greet them by name (rendered via `textContent`, so it is XSS-safe).
+
+### How invitations are sent (WhatsApp)
+
+Sending is driven from a **Google Sheet** guest list, not from inside the invitation page. Run `setup_sheet.py` (repo root) once to build the template. Each guest row has two auto-generated columns:
+
+- **Link Undangan** — a `HYPERLINK` to `…/?to=<name>` for that guest.
+- **Kirim via WhatsApp** — a **Kirim WA** button. Its formula builds a `https://wa.me/<number>?text=<message>` deep link: it normalises the phone number (leading `0` → `62`, strips `+`/`-`) and pre-fills the full message (matching `wording_wa.txt`) including the personalised invitation link.
+
+Workflow: fill in name + phone → click **Kirim WA** → WhatsApp opens to that chat with the message and link ready → press Send → mark the row **Terkirim**.
+
+> Note: there is currently no in-page "Share via WhatsApp" button — the `index.html` page only handles greeting personalisation. All sending happens from the Sheet.
 
 Tip: use a spreadsheet to build a list of personalised links. Column A = guest name, column B:
 

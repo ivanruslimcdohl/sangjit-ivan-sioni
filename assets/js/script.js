@@ -6,7 +6,7 @@
   'use strict';
 
   // ---------- Config ----------
-  const EVENT_DATE = new Date('2026-07-11T10:00:00+07:00');
+  const EVENT_DATE = new Date('2026-07-11T18:00:00+07:00');
   const DEFAULT_LANG = 'id';
   const DEFAULT_GUEST = {
     id: 'Bapak / Ibu / Saudara / i',
